@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #$ -j yes
 #$ -l h_data=2G  # Adjust the memory requirement as needed
 #$ -l h_rt=2:00:00
