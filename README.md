@@ -10,11 +10,11 @@ Hypothesis:
 There is a relationship between off-target cfDNA composition and ALS disease state, which could be used as a biomarker for diagnosis and disease progression.
 
 Tentative steps:
-Preprocess reference genomes and use them to build a custom Kraken database for comparison to patient samples
-Run Kraken algorithm to determine microbial composition
-Additional QC steps to ensure proper estimation of matches with microbial reads
-Identify reads mapping to mitochondrial human genome 
-Correlate with ALS (and potentially other disease) biology
+Preprocess reference genomes and use them to build a custom Kraken microbial database for comparison to patient samples.
+Run Kraken algorithm to determine microbiome.
+Additional QC steps to ensure proper estimation of matches with microbial reads.
+Identify prominent microbes.
+Correlate with ALS (and potentially other disease) biology.
 
 Related research:
 Blacher, E., Bashiardes, S., Shapiro, H. et al. Potential roles of gut microbiome and metabolites in modulating ALS in mice. Nature 572, 474–480 (2019). https://doi.org/10.1038/s41586-019-1443-5
