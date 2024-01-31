@@ -1,7 +1,5 @@
 import csv
 
-#script for bisulfite converting
-
 #takes in a string of input from a FASTA file and returns a string of just the base pair sequence
 def edit(strinput, taxID):
     #get rid of empty lines (ex. before the first >)
