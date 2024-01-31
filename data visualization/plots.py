@@ -7,7 +7,7 @@ def plot_and_save(csv_file):
     # Read data from CSV file
     df = pd.read_csv(csv_file, index_col=0)
 
-    # Bar Plot for Overall Abundance
+    #bar plot for overall abundance
     plt.figure(figsize=(12, 6))
     sns.barplot(data=df.T)
     plt.title('Overall Abundance of Bacterial Genera')
@@ -16,7 +16,7 @@ def plot_and_save(csv_file):
     plt.savefig('overall_abundance_plot.png')
     plt.show()
 
-    # Box Plot for Individual Genera
+    #box plot for individual genera
     plt.figure(figsize=(12, 6))
     sns.boxplot(data=df.melt(id_vars=None, var_name='Sample', value_name='Abundance'), x='Genus', y='Abundance')
     plt.title('Distribution of Microbial Abundance for Each Genus')
@@ -25,7 +25,7 @@ def plot_and_save(csv_file):
     plt.savefig('box_plot_individual_genera.png')
     plt.show()
 
-    # Heatmap for Correlation
+    #heatmap for correlations
     correlation_matrix = df.corr()
     plt.figure(figsize=(12, 8))
     sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
@@ -40,4 +40,3 @@ if __name__ == "__main__":
 
     csv_file_path = sys.argv[1]
     plot_and_save(csv_file_path)
-
