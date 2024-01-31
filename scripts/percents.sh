@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# SGE directives
 #$ -cwd
 #$ -j yes
 #$ -l h_data=2G  # Adjust the memory requirement as needed
